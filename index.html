@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <title>강동균-포트폴리오</title>
+    <style>
+        #app {
+            text-align: center;
+        }
+
+        .class {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="item" v-for="item in items" v-bind:key="item.key">
+            <img :src="item.uri">
+        </div>
+        
+    </div>
+
+    <script>
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                items: [
+                    { key: 'img1', uri: './img/img1.JPG' },
+                    { key: 'img2', uri: './img/img2.JPG' },
+                    { key: 'img3', uri: './img/img3.JPG' },
+                    { key: 'img4', uri: './img/img4.JPG' },
+                    { key: 'img5', uri: './img/img5.JPG' },
+                    { key: 'img6', uri: './img/img6.JPG' },
+                    { key: 'img7', uri: './img/img7.JPG' },
+                    { key: 'img8', uri: './img/img8.JPG' },
+                    { key: 'img9', uri: './img/img9.JPG' },
+                    { key: 'img10', uri: './img/img10.JPG' },
+                    { key: 'img11', uri: './img/img11.JPG' },
+                    { key: 'img12', uri: './img/img12.JPG' },
+                    { key: 'img13', uri: './img/img13.JPG' },
+                    { key: 'img14', uri: './img/img14.JPG' },
+                    { key: 'img15', uri: './img/img15.JPG' },
+                    { key: 'img16', uri: './img/img16.JPG' },
+                ],
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>
